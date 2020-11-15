@@ -1,33 +1,48 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+# ⚡️ Blog
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+Blog pessoal desenvolvido com Next.js e TypeScript
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using Markdown files as the data source.
+## ℹ️ Sobre o projeto
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+Este projeto consiste em um blog pessoal, onde futuramente farei posts dando dicas e passando conhecimentos que eu adquiri e que irei adquirindo ao longo de minha carreira.
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+## ✨ Demonstração
 
-## How to use
+Veja abaixo uma foto do projeto.
+[![Image from Gyazo](https://i.gyazo.com/9ef24e68eff592256793bf16e56af2da.png)](https://gyazo.com/9ef24e68eff592256793bf16e56af2da)
 
-## Deploy your own
+Você pode conferir o resultado final em: https://caio-blog.netlify.app
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## 🎯 Objetivo do projeto
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?c=1&s=https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript)
+Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos com Next.js.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## 📝 Tecnologias
+
+Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens:
+
+- [React.js](https://pt-br.reactjs.org)
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [date-fns](https://date-fns.org)
+- [tailwindcss](https://tailwindcss.com/)
+
+## ⚙️ Instalação
+
+Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
-npx create-next-app --example blog-starter-typescript blog-starter-typescript-app
-# or
-yarn create next-app --example blog-starter-typescript blog-starter-typescript-app
+# Clone o repositório em alguma pasta em sua máquina
+$ git clone https://github.com/CaioAugustoo/blog_nextjs
+
+# Entre no repositório
+$ cd blog_nextjs
+
+Instale as dependencias digitando no termimal:
+$ yarn install
+
+Rode a aplicação no modo de desenvolvimento.
+$ yarn dev
+
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
-
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-# Notes
-
-This blog-starter-typescript uses [Tailwind CSS](https://tailwindcss.com). To control the generated stylesheet's filesize, this example uses Tailwind CSS' v1.4 [`purge` option](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to remove unused CSS.
